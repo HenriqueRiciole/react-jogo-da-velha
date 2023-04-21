@@ -4,3 +4,16 @@
     gap: 15px;
 
 }
+
+.gameContent{
+    display: flex;
+    gap: 30px;
+   align-items: center;
+}
+
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
