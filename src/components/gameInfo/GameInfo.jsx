@@ -36,7 +36,7 @@ function GameInfo({currectPlayer, winner, onReset}){
                 </>
             } 
             <Button onClick={onReset}
-                    disabled={!shouldEnableButton} >
+                    disabled={!shouldEnableButton()} >
                 Reiniciar
             </Button>
         </div>
