@@ -3,6 +3,7 @@ import styles from './Game.module.css'
 
 import GameInfo from '../gameInfo/GameInfo'
 import GameOption from '../gameOption/GameOption'
+import Score from '../score/Score'
 
 const winnerTable=[
     [0,1,2],
@@ -75,6 +76,7 @@ function Game(){
     },[winner])//verifica se houve algum vencedor para não entrar no empate
 
     return(
+        <>
         <div className={styles.gameContent}>
             <div className={styles.game}>
             {
@@ -94,7 +96,8 @@ function Game(){
                 isDraw={draw}
             />
         </div>
-        
+        <Score/>
+        </>
         
     )
 }
